@@ -1,0 +1,20 @@
+{
+    "debug": true,
+    "lintScripts": false,
+    "preprocessorLocations": "library/scss",
+    "preprocessorScriptOutput": "library/js",
+    "preprocessorStyleOutput": "library/css",
+    "projectName": "Project Name",
+    "projectDescription": "Project Description",
+    "publishedId": null,
+    "serverHostname": null,
+    "serverPort": null,
+    "templateDirectory": "templates",
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "type": "simple",
+    "useCompass": false,
+    "simpleModePartnerServer": "http://localhost",
+    "modelSource": null,
+    "domain": null
+}
