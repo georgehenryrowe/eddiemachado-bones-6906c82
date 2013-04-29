@@ -867,22 +867,26 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
-  /* line 131, /library/scss/_base.scss */
+  margin-bottom: 0.375em;
+  text-transform: uppercase; }
+  /* line 132, /library/scss/_base.scss */
   h2 a, .h2 a {
     color: #020202;
     font-weight: bold; }
+    /* line 135, /library/scss/_base.scss */
+    h2 a:hover, .h2 a:hover {
+      color: #00cfff; }
 
-/* line 137, /library/scss/_base.scss */
+/* line 141, /library/scss/_base.scss */
 h3, .h3 {
   font-size: 1.125em; }
 
-/* line 141, /library/scss/_base.scss */
+/* line 145, /library/scss/_base.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-/* line 146, /library/scss/_base.scss */
+/* line 150, /library/scss/_base.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -902,14 +906,14 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 173, /library/scss/_base.scss */
+/* line 177, /library/scss/_base.scss */
 .nav {
   border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  /* line 177, /library/scss/_base.scss */
+  /* line 181, /library/scss/_base.scss */
   .nav li {
     /*
     so you really have to rethink your dropdowns for mobile.
@@ -918,7 +922,7 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-    /* line 179, /library/scss/_base.scss */
+    /* line 183, /library/scss/_base.scss */
     .nav li a {
       display: block;
       text-decoration: none;
@@ -930,7 +934,7 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    /* line 212, /library/scss/_base.scss */
+    /* line 216, /library/scss/_base.scss */
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -939,7 +943,7 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 248, /library/scss/_base.scss */
+/* line 252, /library/scss/_base.scss */
 #content {
   margin-top: 2.2em; }
 
@@ -954,12 +958,12 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 280, /library/scss/_base.scss */
+/* line 284, /library/scss/_base.scss */
 .byline {
   color: #999; }
 
 /* entry content */
-/* line 287, /library/scss/_base.scss */
+/* line 291, /library/scss/_base.scss */
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -967,40 +971,40 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 322, /library/scss/_base.scss */
+  /* line 326, /library/scss/_base.scss */
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-  /* line 329, /library/scss/_base.scss */
+  /* line 333, /library/scss/_base.scss */
   .entry-content img {
     margin: 0 0 1.5em 0;
     max-width: 100%;
     height: auto; }
-  /* line 345, /library/scss/_base.scss */
+  /* line 349, /library/scss/_base.scss */
   .entry-content video, .entry-content object {
     max-width: 100%;
     height: auto; }
-  /* line 350, /library/scss/_base.scss */
+  /* line 354, /library/scss/_base.scss */
   .entry-content pre {
     background: #eee;
     border: 1px solid #cecece;
     padding: 10px; }
 
 /* end .entry-content */
-/* line 358, /library/scss/_base.scss */
+/* line 362, /library/scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-  /* line 364, /library/scss/_base.scss */
+  /* line 368, /library/scss/_base.scss */
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  /* line 370, /library/scss/_base.scss */
+  /* line 374, /library/scss/_base.scss */
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -1013,12 +1017,12 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 408, /library/scss/_base.scss */
+/* line 412, /library/scss/_base.scss */
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em; }
 
-/* line 411, /library/scss/_base.scss */
+/* line 415, /library/scss/_base.scss */
 .bones_page_navi {
   /* current page link */
   /* end .bones_page_navi .bpn-current */
@@ -1028,37 +1032,37 @@ PAGE NAVI STYLES
   /* next page link */
   /* first page link */
   /* last page link */ }
-  /* line 413, /library/scss/_base.scss */
+  /* line 417, /library/scss/_base.scss */
   .bones_page_navi li {
     float: left;
     margin-left: 10px; }
-    /* line 417, /library/scss/_base.scss */
+    /* line 421, /library/scss/_base.scss */
     .bones_page_navi li a {
       padding: 3px 6px;
       display: block;
       text-decoration: none;
       position: relative; }
-      /* line 424, /library/scss/_base.scss */
+      /* line 428, /library/scss/_base.scss */
       .bones_page_navi li a:hover, .bones_page_navi li a:focus {
         color: #f01d4f;
         text-decoration: underline; }
-  /* line 433, /library/scss/_base.scss */
+  /* line 437, /library/scss/_base.scss */
   .bones_page_navi li.bpn-current {
     padding: 3px 6px;
     border-bottom: 2px solid #f01d4f;
     position: relative; }
-    /* line 438, /library/scss/_base.scss */
+    /* line 442, /library/scss/_base.scss */
     .bones_page_navi li.bpn-current a {
       /* hovering on current page link */ }
-  /* line 449, /library/scss/_base.scss */
+  /* line 453, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link,
   .bones_page_navi li.bpn-next-link {
     font-weight: 700; }
-    /* line 452, /library/scss/_base.scss */
+    /* line 456, /library/scss/_base.scss */
     .bones_page_navi li.bpn-prev-link a,
     .bones_page_navi li.bpn-next-link a {
       padding: 0; }
-  /* line 461, /library/scss/_base.scss */
+  /* line 465, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link a:hover,
   .bones_page_navi li.bpn-next-link a:hover,
   .bones_page_navi li.bpn-first-page-link a:hover,
@@ -1067,10 +1071,10 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 504, /library/scss/_base.scss */
+/* line 508, /library/scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left; }
-/* line 508, /library/scss/_base.scss */
+/* line 512, /library/scss/_base.scss */
 .wp-prev-next .next-link {
   float: right; }
 
@@ -1079,11 +1083,11 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 519, /library/scss/_base.scss */
+/* line 523, /library/scss/_base.scss */
 #comments {
   /* number of comments span */ }
 
-/* line 536, /library/scss/_base.scss */
+/* line 540, /library/scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1093,7 +1097,7 @@ COMMENT STYLES
   /* end .commentlist .comment_content */
   /* comment reply link */
   /* end .commentlist .comment-reply-link */ }
-  /* line 538, /library/scss/_base.scss */
+  /* line 542, /library/scss/_base.scss */
   .commentlist li {
     position: relative;
     clear: both;
@@ -1102,66 +1106,66 @@ COMMENT STYLES
     margin-bottom: 1.5em;
     padding: 0.7335em 10px;
     /* end .commentlist li ul.children */ }
-    /* line 546, /library/scss/_base.scss */
+    /* line 550, /library/scss/_base.scss */
     .commentlist li:last-child {
       margin-bottom: 0; }
-    /* line 550, /library/scss/_base.scss */
+    /* line 554, /library/scss/_base.scss */
     .commentlist li ul.children {
       margin: 0;
       /* variations */
       /* change number for different depth */ }
-  /* line 568, /library/scss/_base.scss */
+  /* line 572, /library/scss/_base.scss */
   .commentlist li[class*=depth-] {
     margin-top: 1.1em; }
-  /* line 572, /library/scss/_base.scss */
+  /* line 576, /library/scss/_base.scss */
   .commentlist li.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-  /* line 577, /library/scss/_base.scss */
+  /* line 581, /library/scss/_base.scss */
   .commentlist li:not(.depth-1) {
     margin-right: -10px;
     margin-left: -10px;
     margin-top: 0;
     padding-bottom: 0; }
-  /* line 591, /library/scss/_base.scss */
+  /* line 595, /library/scss/_base.scss */
   .commentlist .odd {
     background: #eee; }
-  /* line 594, /library/scss/_base.scss */
+  /* line 598, /library/scss/_base.scss */
   .commentlist .even {
     background: #fefefe; }
-  /* line 609, /library/scss/_base.scss */
+  /* line 613, /library/scss/_base.scss */
   .commentlist .vcard {
     margin-left: 50px; }
-    /* line 612, /library/scss/_base.scss */
+    /* line 616, /library/scss/_base.scss */
     .commentlist .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-    /* line 620, /library/scss/_base.scss */
+    /* line 624, /library/scss/_base.scss */
     .commentlist .vcard time {
       float: right; }
-      /* line 623, /library/scss/_base.scss */
+      /* line 627, /library/scss/_base.scss */
       .commentlist .vcard time a {
         color: #999;
         text-decoration: none; }
-        /* line 627, /library/scss/_base.scss */
+        /* line 631, /library/scss/_base.scss */
         .commentlist .vcard time a:hover {
           text-decoration: underline; }
-    /* line 637, /library/scss/_base.scss */
+    /* line 641, /library/scss/_base.scss */
     .commentlist .vcard img.avatar {
       position: absolute;
       left: 10px;
       padding: 2px;
       border: 1px solid #cecece;
       background: #fff; }
-  /* line 662, /library/scss/_base.scss */
+  /* line 666, /library/scss/_base.scss */
   .commentlist .comment_content {
     margin-left: 50px; }
-    /* line 665, /library/scss/_base.scss */
+    /* line 669, /library/scss/_base.scss */
     .commentlist .comment_content p {
       margin: 0.7335em 0 1.5em;
       font-size: 1em;
       line-height: 1.5em; }
-  /* line 674, /library/scss/_base.scss */
+  /* line 678, /library/scss/_base.scss */
   .commentlist .comment-reply-link {
     text-decoration: none;
     float: right;
@@ -1172,7 +1176,7 @@ COMMENT STYLES
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.9em; }
-    /* line 686, /library/scss/_base.scss */
+    /* line 690, /library/scss/_base.scss */
     .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
       opacity: 1; }
 
@@ -1180,23 +1184,23 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 698, /library/scss/_base.scss */
+/* line 702, /library/scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em; }
-  /* line 702, /library/scss/_base.scss */
+  /* line 706, /library/scss/_base.scss */
   .respond-form form {
     margin: 0.75em 0; }
-    /* line 705, /library/scss/_base.scss */
+    /* line 709, /library/scss/_base.scss */
     .respond-form form li {
       list-style-type: none;
       clear: both;
       margin-bottom: 0.7335em; }
-      /* line 711, /library/scss/_base.scss */
+      /* line 715, /library/scss/_base.scss */
       .respond-form form li label,
       .respond-form form li small {
         display: none; }
-    /* line 719, /library/scss/_base.scss */
+    /* line 723, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url],
@@ -1206,13 +1210,13 @@ COMMENT FORM STYLES
       border: 2px solid #cecece;
       line-height: 1.5em;
       /* form validation */ }
-      /* line 725, /library/scss/_base.scss */
+      /* line 729, /library/scss/_base.scss */
       .respond-form form input[type=text]:focus,
       .respond-form form input[type=email]:focus,
       .respond-form form input[type=url]:focus,
       .respond-form form textarea:focus {
         background: #fff; }
-      /* line 730, /library/scss/_base.scss */
+      /* line 734, /library/scss/_base.scss */
       .respond-form form input[type=text]:invalid,
       .respond-form form input[type=email]:invalid,
       .respond-form form input[type=url]:invalid,
@@ -1224,13 +1228,13 @@ COMMENT FORM STYLES
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         box-shadow: none; }
-    /* line 743, /library/scss/_base.scss */
+    /* line 747, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url] {
       max-width: 400px;
       min-width: 250px; }
-    /* line 748, /library/scss/_base.scss */
+    /* line 752, /library/scss/_base.scss */
     .respond-form form textarea {
       resize: none;
       width: 97.3%;
@@ -1238,33 +1242,33 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 761, /library/scss/_base.scss */
+/* line 765, /library/scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 774, /library/scss/_base.scss */
+/* line 778, /library/scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-/* line 779, /library/scss/_base.scss */
+/* line 783, /library/scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 795, /library/scss/_base.scss */
+/* line 799, /library/scss/_base.scss */
 .widget ul li {
   /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
 *********************/
-/* line 816, /library/scss/_base.scss */
+/* line 820, /library/scss/_base.scss */
 .footer {
   clear: both; }
 
@@ -1382,9 +1386,9 @@ you can add resource intensive styles.
   http://susy.oddbird.net/ - Grids using Compass. Very elegant.
   http://gridpak.com/ - Create your own responsive grid.
   
-  The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-  together, let's see how this works out. If you want to use 1140, the original 
+  The grid below is a combination of the 1140 grid and Twitter Boostrap.
+  I liked 1140 but Boostrap's grid was way more detailed so I merged them
+  together, let's see how this works out. If you want to use 1140, the original
   values are commented out on each line.
   
   ******************************************************************/
@@ -1462,6 +1466,10 @@ you can add resource intensive styles.
   .last {
     float: right; }
 
+  /* line 52, /library/scss/_grid.scss */
+  .fourcol {
+    max-width: 315px !important; }
+
   /******************************************************************
   Site Name:
   Author:
@@ -1507,24 +1515,19 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 63, /library/scss/_768up.scss */
-  .sidebar {
-    margin-top: 2.2em; }
-
-  /* line 67, /library/scss/_768up.scss */
+  /* line 66, /library/scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
 
-  /* line 72, /library/scss/_768up.scss */
+  /* line 71, /library/scss/_768up.scss */
   .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    /* line 77, /library/scss/_768up.scss */
+    padding: 0 10px; }
+    /* line 75, /library/scss/_768up.scss */
     .widget ul li {
       margin-bottom: 0.75em;
       /* deep nesting */ }
-      /* line 85, /library/scss/_768up.scss */
+      /* line 83, /library/scss/_768up.scss */
       .widget ul li ul {
         margin-top: 0.75em;
         padding-left: 1em; }
@@ -1548,7 +1551,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 193, /library/scss/_768up.scss */
+  /* line 191, /library/scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -1644,7 +1647,12 @@ you can add resource intensive styles.
         width: 115px; }
         /* line 74, /library/scss/_1030up.scss */
         #nav ul li a.menuarchive:hover {
-          height: 63px; } }
+          height: 63px; }
+
+  /* line 82, /library/scss/_1030up.scss */
+  .divider {
+    float: left;
+    display: inline; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

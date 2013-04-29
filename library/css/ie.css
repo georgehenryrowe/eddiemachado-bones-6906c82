@@ -254,9 +254,9 @@ http://gridsetapp.com - Love this site. Responsive Grids made easy.
 http://susy.oddbird.net/ - Grids using Compass. Very elegant.
 http://gridpak.com/ - Create your own responsive grid.
 
-The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-together, let's see how this works out. If you want to use 1140, the original 
+The grid below is a combination of the 1140 grid and Twitter Boostrap.
+I liked 1140 but Boostrap's grid was way more detailed so I merged them
+together, let's see how this works out. If you want to use 1140, the original
 values are commented out on each line.
 
 ******************************************************************/
@@ -333,6 +333,10 @@ values are commented out on each line.
 /* line 48, /library/scss/_grid.scss */
 .last {
   float: right; }
+
+/* line 52, /library/scss/_grid.scss */
+.fourcol {
+  max-width: 315px !important; }
 
 /******************************************************************
 Site Name: 
@@ -453,24 +457,19 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 63, /library/scss/_768up.scss */
-.sidebar {
-  margin-top: 2.2em; }
-
-/* line 67, /library/scss/_768up.scss */
+/* line 66, /library/scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em; }
 
-/* line 72, /library/scss/_768up.scss */
+/* line 71, /library/scss/_768up.scss */
 .widget {
-  padding: 0 10px;
-  margin: 2.2em 0; }
-  /* line 77, /library/scss/_768up.scss */
+  padding: 0 10px; }
+  /* line 75, /library/scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */ }
-    /* line 85, /library/scss/_768up.scss */
+    /* line 83, /library/scss/_768up.scss */
     .widget ul li ul {
       margin-top: 0.75em;
       padding-left: 1em; }
@@ -494,7 +493,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 193, /library/scss/_768up.scss */
+/* line 191, /library/scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -584,6 +583,11 @@ be seen on the Desktop.
       /* line 74, /library/scss/_1030up.scss */
       #nav ul li a.menuarchive:hover {
         height: 63px; }
+
+/* line 82, /library/scss/_1030up.scss */
+.divider {
+  float: left;
+  display: inline; }
 
 /* 
 you can call the larger styles if you want, but there's really no need 

@@ -1,4 +1,5 @@
-				<div id="sidebar1" class="sidebar threecol clearfix" role="complementary">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/divider.png" class="divider">
+				<div id="sidebar1" class="sidebar fourcol clearfix" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 

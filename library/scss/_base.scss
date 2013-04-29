@@ -128,9 +128,13 @@ h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+	text-transform:uppercase;
 	a {
-	color: #020202;
+	color: $black;
 	font-weight:bold;
+	&:hover {
+	color:$perus-blue;
+	}
 	}
 }
 
