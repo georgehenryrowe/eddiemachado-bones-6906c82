@@ -8,3 +8,73 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+
+#nav {
+position: absolute;
+top:3.5%;
+left:26%;
+  ul {
+    li {
+    float:left;
+      a {
+      display:block;
+      text-indent: -9999em;
+      background:url(../images/menu-sprite-2.png)no-repeat;
+      height:44px;
+      margin-right: 18px;
+    }
+      a.menublog {
+      background-position:0px 0px;
+      width:56px;
+        &:hover {
+        height:63px;
+        }
+      }
+      a.menuteam {
+      background-position:-76px 0px;
+      width:56px;
+        &:hover {
+        height:63px;
+        }
+      }
+      a.menushop{
+      background-position:-153px 0px;
+      width:60px;
+        &:hover {
+        height:63px;
+        }
+      }
+      a.menuvideos {
+      background-position:-232px 0px;
+      width:80px;
+        &:hover {
+        height:63px;
+        }   }
+      a.menuabout {
+      background-position: -335px 0px;
+      width:80px;
+        &:hover {
+        height:63px;
+        }}
+      a.menustockists {
+      background-position:-435px 0px;
+      width:125px;
+        &:hover {
+        height:63px;
+        }}
+      a.menuart {
+      background-position:-580px 0px;
+      width:43px;
+        &:hover {
+        height:63px;
+        }   }
+      a.menuarchive {
+      background-position:-643px 0px;
+      width:115px;
+        &:hover {
+        height:63px;
+        }
+      }
+    }
+  }
+}

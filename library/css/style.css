@@ -868,17 +868,21 @@ h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
+  /* line 131, /library/scss/_base.scss */
+  h2 a, .h2 a {
+    color: #020202;
+    font-weight: bold; }
 
-/* line 133, /library/scss/_base.scss */
+/* line 137, /library/scss/_base.scss */
 h3, .h3 {
   font-size: 1.125em; }
 
-/* line 137, /library/scss/_base.scss */
+/* line 141, /library/scss/_base.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-/* line 142, /library/scss/_base.scss */
+/* line 146, /library/scss/_base.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -898,14 +902,14 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 169, /library/scss/_base.scss */
+/* line 173, /library/scss/_base.scss */
 .nav {
   border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  /* line 173, /library/scss/_base.scss */
+  /* line 177, /library/scss/_base.scss */
   .nav li {
     /*
     so you really have to rethink your dropdowns for mobile.
@@ -914,7 +918,7 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-    /* line 175, /library/scss/_base.scss */
+    /* line 179, /library/scss/_base.scss */
     .nav li a {
       display: block;
       text-decoration: none;
@@ -926,7 +930,7 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    /* line 208, /library/scss/_base.scss */
+    /* line 212, /library/scss/_base.scss */
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -935,7 +939,7 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 244, /library/scss/_base.scss */
+/* line 248, /library/scss/_base.scss */
 #content {
   margin-top: 2.2em; }
 
@@ -950,12 +954,12 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 276, /library/scss/_base.scss */
+/* line 280, /library/scss/_base.scss */
 .byline {
   color: #999; }
 
 /* entry content */
-/* line 283, /library/scss/_base.scss */
+/* line 287, /library/scss/_base.scss */
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -963,40 +967,40 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 318, /library/scss/_base.scss */
+  /* line 322, /library/scss/_base.scss */
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-  /* line 325, /library/scss/_base.scss */
+  /* line 329, /library/scss/_base.scss */
   .entry-content img {
     margin: 0 0 1.5em 0;
     max-width: 100%;
     height: auto; }
-  /* line 341, /library/scss/_base.scss */
+  /* line 345, /library/scss/_base.scss */
   .entry-content video, .entry-content object {
     max-width: 100%;
     height: auto; }
-  /* line 346, /library/scss/_base.scss */
+  /* line 350, /library/scss/_base.scss */
   .entry-content pre {
     background: #eee;
     border: 1px solid #cecece;
     padding: 10px; }
 
 /* end .entry-content */
-/* line 354, /library/scss/_base.scss */
+/* line 358, /library/scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-  /* line 360, /library/scss/_base.scss */
+  /* line 364, /library/scss/_base.scss */
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  /* line 366, /library/scss/_base.scss */
+  /* line 370, /library/scss/_base.scss */
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -1009,12 +1013,12 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 404, /library/scss/_base.scss */
+/* line 408, /library/scss/_base.scss */
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em; }
 
-/* line 407, /library/scss/_base.scss */
+/* line 411, /library/scss/_base.scss */
 .bones_page_navi {
   /* current page link */
   /* end .bones_page_navi .bpn-current */
@@ -1024,37 +1028,37 @@ PAGE NAVI STYLES
   /* next page link */
   /* first page link */
   /* last page link */ }
-  /* line 409, /library/scss/_base.scss */
+  /* line 413, /library/scss/_base.scss */
   .bones_page_navi li {
     float: left;
     margin-left: 10px; }
-    /* line 413, /library/scss/_base.scss */
+    /* line 417, /library/scss/_base.scss */
     .bones_page_navi li a {
       padding: 3px 6px;
       display: block;
       text-decoration: none;
       position: relative; }
-      /* line 420, /library/scss/_base.scss */
+      /* line 424, /library/scss/_base.scss */
       .bones_page_navi li a:hover, .bones_page_navi li a:focus {
         color: #f01d4f;
         text-decoration: underline; }
-  /* line 429, /library/scss/_base.scss */
+  /* line 433, /library/scss/_base.scss */
   .bones_page_navi li.bpn-current {
     padding: 3px 6px;
     border-bottom: 2px solid #f01d4f;
     position: relative; }
-    /* line 434, /library/scss/_base.scss */
+    /* line 438, /library/scss/_base.scss */
     .bones_page_navi li.bpn-current a {
       /* hovering on current page link */ }
-  /* line 445, /library/scss/_base.scss */
+  /* line 449, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link,
   .bones_page_navi li.bpn-next-link {
     font-weight: 700; }
-    /* line 448, /library/scss/_base.scss */
+    /* line 452, /library/scss/_base.scss */
     .bones_page_navi li.bpn-prev-link a,
     .bones_page_navi li.bpn-next-link a {
       padding: 0; }
-  /* line 457, /library/scss/_base.scss */
+  /* line 461, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link a:hover,
   .bones_page_navi li.bpn-next-link a:hover,
   .bones_page_navi li.bpn-first-page-link a:hover,
@@ -1063,10 +1067,10 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 500, /library/scss/_base.scss */
+/* line 504, /library/scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left; }
-/* line 504, /library/scss/_base.scss */
+/* line 508, /library/scss/_base.scss */
 .wp-prev-next .next-link {
   float: right; }
 
@@ -1075,11 +1079,11 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 515, /library/scss/_base.scss */
+/* line 519, /library/scss/_base.scss */
 #comments {
   /* number of comments span */ }
 
-/* line 532, /library/scss/_base.scss */
+/* line 536, /library/scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1089,7 +1093,7 @@ COMMENT STYLES
   /* end .commentlist .comment_content */
   /* comment reply link */
   /* end .commentlist .comment-reply-link */ }
-  /* line 534, /library/scss/_base.scss */
+  /* line 538, /library/scss/_base.scss */
   .commentlist li {
     position: relative;
     clear: both;
@@ -1098,66 +1102,66 @@ COMMENT STYLES
     margin-bottom: 1.5em;
     padding: 0.7335em 10px;
     /* end .commentlist li ul.children */ }
-    /* line 542, /library/scss/_base.scss */
+    /* line 546, /library/scss/_base.scss */
     .commentlist li:last-child {
       margin-bottom: 0; }
-    /* line 546, /library/scss/_base.scss */
+    /* line 550, /library/scss/_base.scss */
     .commentlist li ul.children {
       margin: 0;
       /* variations */
       /* change number for different depth */ }
-  /* line 564, /library/scss/_base.scss */
+  /* line 568, /library/scss/_base.scss */
   .commentlist li[class*=depth-] {
     margin-top: 1.1em; }
-  /* line 568, /library/scss/_base.scss */
+  /* line 572, /library/scss/_base.scss */
   .commentlist li.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-  /* line 573, /library/scss/_base.scss */
+  /* line 577, /library/scss/_base.scss */
   .commentlist li:not(.depth-1) {
     margin-right: -10px;
     margin-left: -10px;
     margin-top: 0;
     padding-bottom: 0; }
-  /* line 587, /library/scss/_base.scss */
+  /* line 591, /library/scss/_base.scss */
   .commentlist .odd {
     background: #eee; }
-  /* line 590, /library/scss/_base.scss */
+  /* line 594, /library/scss/_base.scss */
   .commentlist .even {
     background: #fefefe; }
-  /* line 605, /library/scss/_base.scss */
+  /* line 609, /library/scss/_base.scss */
   .commentlist .vcard {
     margin-left: 50px; }
-    /* line 608, /library/scss/_base.scss */
+    /* line 612, /library/scss/_base.scss */
     .commentlist .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-    /* line 616, /library/scss/_base.scss */
+    /* line 620, /library/scss/_base.scss */
     .commentlist .vcard time {
       float: right; }
-      /* line 619, /library/scss/_base.scss */
+      /* line 623, /library/scss/_base.scss */
       .commentlist .vcard time a {
         color: #999;
         text-decoration: none; }
-        /* line 623, /library/scss/_base.scss */
+        /* line 627, /library/scss/_base.scss */
         .commentlist .vcard time a:hover {
           text-decoration: underline; }
-    /* line 633, /library/scss/_base.scss */
+    /* line 637, /library/scss/_base.scss */
     .commentlist .vcard img.avatar {
       position: absolute;
       left: 10px;
       padding: 2px;
       border: 1px solid #cecece;
       background: #fff; }
-  /* line 658, /library/scss/_base.scss */
+  /* line 662, /library/scss/_base.scss */
   .commentlist .comment_content {
     margin-left: 50px; }
-    /* line 661, /library/scss/_base.scss */
+    /* line 665, /library/scss/_base.scss */
     .commentlist .comment_content p {
       margin: 0.7335em 0 1.5em;
       font-size: 1em;
       line-height: 1.5em; }
-  /* line 670, /library/scss/_base.scss */
+  /* line 674, /library/scss/_base.scss */
   .commentlist .comment-reply-link {
     text-decoration: none;
     float: right;
@@ -1168,7 +1172,7 @@ COMMENT STYLES
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.9em; }
-    /* line 682, /library/scss/_base.scss */
+    /* line 686, /library/scss/_base.scss */
     .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
       opacity: 1; }
 
@@ -1176,23 +1180,23 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 694, /library/scss/_base.scss */
+/* line 698, /library/scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em; }
-  /* line 698, /library/scss/_base.scss */
+  /* line 702, /library/scss/_base.scss */
   .respond-form form {
     margin: 0.75em 0; }
-    /* line 701, /library/scss/_base.scss */
+    /* line 705, /library/scss/_base.scss */
     .respond-form form li {
       list-style-type: none;
       clear: both;
       margin-bottom: 0.7335em; }
-      /* line 707, /library/scss/_base.scss */
+      /* line 711, /library/scss/_base.scss */
       .respond-form form li label,
       .respond-form form li small {
         display: none; }
-    /* line 715, /library/scss/_base.scss */
+    /* line 719, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url],
@@ -1202,13 +1206,13 @@ COMMENT FORM STYLES
       border: 2px solid #cecece;
       line-height: 1.5em;
       /* form validation */ }
-      /* line 721, /library/scss/_base.scss */
+      /* line 725, /library/scss/_base.scss */
       .respond-form form input[type=text]:focus,
       .respond-form form input[type=email]:focus,
       .respond-form form input[type=url]:focus,
       .respond-form form textarea:focus {
         background: #fff; }
-      /* line 726, /library/scss/_base.scss */
+      /* line 730, /library/scss/_base.scss */
       .respond-form form input[type=text]:invalid,
       .respond-form form input[type=email]:invalid,
       .respond-form form input[type=url]:invalid,
@@ -1220,13 +1224,13 @@ COMMENT FORM STYLES
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         box-shadow: none; }
-    /* line 739, /library/scss/_base.scss */
+    /* line 743, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url] {
       max-width: 400px;
       min-width: 250px; }
-    /* line 744, /library/scss/_base.scss */
+    /* line 748, /library/scss/_base.scss */
     .respond-form form textarea {
       resize: none;
       width: 97.3%;
@@ -1234,33 +1238,33 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 757, /library/scss/_base.scss */
+/* line 761, /library/scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 770, /library/scss/_base.scss */
+/* line 774, /library/scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-/* line 775, /library/scss/_base.scss */
+/* line 779, /library/scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 791, /library/scss/_base.scss */
+/* line 795, /library/scss/_base.scss */
 .widget ul li {
   /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
 *********************/
-/* line 812, /library/scss/_base.scss */
+/* line 816, /library/scss/_base.scss */
 .footer {
   clear: both; }
 
@@ -1483,117 +1487,44 @@ you can add resource intensive styles.
 
   /* line 34, /library/scss/_768up.scss */
   #content {
-    position: relative;
-    top: 150px; }
+    position: relative; }
 
   /*********************
   HEADER STYLES
   *********************/
-  /* line 45, /library/scss/_768up.scss */
+  /* line 44, /library/scss/_768up.scss */
   #logo {
     position: absolute;
     top: 5%;
     margin-left: 3%; }
-    /* line 50, /library/scss/_768up.scss */
+    /* line 49, /library/scss/_768up.scss */
     #logo:hover {
       opacity: 0.8; }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 58, /library/scss/_768up.scss */
-  #nav {
-    position: absolute;
-    top: 3.5%;
-    left: 26%; }
-    /* line 63, /library/scss/_768up.scss */
-    #nav ul li {
-      float: left; }
-      /* line 65, /library/scss/_768up.scss */
-      #nav ul li a {
-        display: block;
-        text-indent: -9999em;
-        background: url(../images/menu-sprite-2.png) no-repeat;
-        height: 44px;
-        margin-right: 18px; }
-      /* line 72, /library/scss/_768up.scss */
-      #nav ul li a.menublog {
-        background-position: 0px 0px;
-        width: 56px; }
-        /* line 75, /library/scss/_768up.scss */
-        #nav ul li a.menublog:hover {
-          height: 63px; }
-      /* line 79, /library/scss/_768up.scss */
-      #nav ul li a.menuteam {
-        background-position: -76px 0px;
-        width: 56px; }
-        /* line 82, /library/scss/_768up.scss */
-        #nav ul li a.menuteam:hover {
-          height: 63px; }
-      /* line 86, /library/scss/_768up.scss */
-      #nav ul li a.menushop {
-        background-position: -153px 0px;
-        width: 60px; }
-        /* line 89, /library/scss/_768up.scss */
-        #nav ul li a.menushop:hover {
-          height: 63px; }
-      /* line 93, /library/scss/_768up.scss */
-      #nav ul li a.menuvideos {
-        background-position: -232px 0px;
-        width: 80px; }
-        /* line 96, /library/scss/_768up.scss */
-        #nav ul li a.menuvideos:hover {
-          height: 63px; }
-      /* line 99, /library/scss/_768up.scss */
-      #nav ul li a.menuabout {
-        background-position: -335px 0px;
-        width: 80px; }
-        /* line 102, /library/scss/_768up.scss */
-        #nav ul li a.menuabout:hover {
-          height: 63px; }
-      /* line 105, /library/scss/_768up.scss */
-      #nav ul li a.menustockists {
-        background-position: -435px 0px;
-        width: 125px; }
-        /* line 108, /library/scss/_768up.scss */
-        #nav ul li a.menustockists:hover {
-          height: 63px; }
-      /* line 111, /library/scss/_768up.scss */
-      #nav ul li a.menuart {
-        background-position: -580px 0px;
-        width: 43px; }
-        /* line 114, /library/scss/_768up.scss */
-        #nav ul li a.menuart:hover {
-          height: 63px; }
-      /* line 117, /library/scss/_768up.scss */
-      #nav ul li a.menuarchive {
-        background-position: -643px 0px;
-        width: 115px; }
-        /* line 120, /library/scss/_768up.scss */
-        #nav ul li a.menuarchive:hover {
-          height: 63px; }
-
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 134, /library/scss/_768up.scss */
+  /* line 63, /library/scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em; }
 
-  /* line 138, /library/scss/_768up.scss */
+  /* line 67, /library/scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
 
-  /* line 143, /library/scss/_768up.scss */
+  /* line 72, /library/scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
-    /* line 148, /library/scss/_768up.scss */
+    /* line 77, /library/scss/_768up.scss */
     .widget ul li {
       margin-bottom: 0.75em;
       /* deep nesting */ }
-      /* line 156, /library/scss/_768up.scss */
+      /* line 85, /library/scss/_768up.scss */
       .widget ul li ul {
         margin-top: 0.75em;
         padding-left: 1em; }
@@ -1617,7 +1548,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 264, /library/scss/_768up.scss */
+  /* line 193, /library/scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -1642,7 +1573,78 @@ you can add resource intensive styles.
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  /* line 12, /library/scss/_1030up.scss */
+  #nav {
+    position: absolute;
+    top: 3.5%;
+    left: 26%; }
+    /* line 17, /library/scss/_1030up.scss */
+    #nav ul li {
+      float: left; }
+      /* line 19, /library/scss/_1030up.scss */
+      #nav ul li a {
+        display: block;
+        text-indent: -9999em;
+        background: url(../images/menu-sprite-2.png) no-repeat;
+        height: 44px;
+        margin-right: 18px; }
+      /* line 26, /library/scss/_1030up.scss */
+      #nav ul li a.menublog {
+        background-position: 0px 0px;
+        width: 56px; }
+        /* line 29, /library/scss/_1030up.scss */
+        #nav ul li a.menublog:hover {
+          height: 63px; }
+      /* line 33, /library/scss/_1030up.scss */
+      #nav ul li a.menuteam {
+        background-position: -76px 0px;
+        width: 56px; }
+        /* line 36, /library/scss/_1030up.scss */
+        #nav ul li a.menuteam:hover {
+          height: 63px; }
+      /* line 40, /library/scss/_1030up.scss */
+      #nav ul li a.menushop {
+        background-position: -153px 0px;
+        width: 60px; }
+        /* line 43, /library/scss/_1030up.scss */
+        #nav ul li a.menushop:hover {
+          height: 63px; }
+      /* line 47, /library/scss/_1030up.scss */
+      #nav ul li a.menuvideos {
+        background-position: -232px 0px;
+        width: 80px; }
+        /* line 50, /library/scss/_1030up.scss */
+        #nav ul li a.menuvideos:hover {
+          height: 63px; }
+      /* line 53, /library/scss/_1030up.scss */
+      #nav ul li a.menuabout {
+        background-position: -335px 0px;
+        width: 80px; }
+        /* line 56, /library/scss/_1030up.scss */
+        #nav ul li a.menuabout:hover {
+          height: 63px; }
+      /* line 59, /library/scss/_1030up.scss */
+      #nav ul li a.menustockists {
+        background-position: -435px 0px;
+        width: 125px; }
+        /* line 62, /library/scss/_1030up.scss */
+        #nav ul li a.menustockists:hover {
+          height: 63px; }
+      /* line 65, /library/scss/_1030up.scss */
+      #nav ul li a.menuart {
+        background-position: -580px 0px;
+        width: 43px; }
+        /* line 68, /library/scss/_1030up.scss */
+        #nav ul li a.menuart:hover {
+          height: 63px; }
+      /* line 71, /library/scss/_1030up.scss */
+      #nav ul li a.menuarchive {
+        background-position: -643px 0px;
+        width: 115px; }
+        /* line 74, /library/scss/_1030up.scss */
+        #nav ul li a.menuarchive:hover {
+          height: 63px; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
