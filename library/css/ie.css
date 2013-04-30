@@ -291,52 +291,59 @@ values are commented out on each line.
 
 /* 48%;    } /* grid_6  */
 /* line 30, /library/scss/_grid.scss */
+.sixpointfivecol {
+  width: 53%; }
+
+/* line 31, /library/scss/_grid.scss */
 .sevencol {
   width: 57.182320438000005%; }
 
 /* 56.75%; } /* grid_7  */
-/* line 31, /library/scss/_grid.scss */
+/* line 32, /library/scss/_grid.scss */
 .eightcol {
   width: 65.74585634900001%; }
 
 /* 65.4%;  } /* grid_8  */
-/* line 32, /library/scss/_grid.scss */
+/* line 33, /library/scss/_grid.scss */
 .ninecol {
   width: 74.30939226%; }
 
 /* 74.05%; } /* grid_9  */
-/* line 33, /library/scss/_grid.scss */
+/* line 34, /library/scss/_grid.scss */
 .tencol {
   width: 82.87292817100001%; }
 
 /* 82.7%;  } /* grid_10 */
-/* line 34, /library/scss/_grid.scss */
+/* line 35, /library/scss/_grid.scss */
 .elevencol {
   width: 91.436464082%; }
 
 /* 91.35%; } /* grid_11 */
-/* line 35, /library/scss/_grid.scss */
+/* line 36, /library/scss/_grid.scss */
 .twelvecol {
   width: 99.999999993%; }
 
 /* 100%;   } /* grid_12 */
-/* line 38, /library/scss/_grid.scss */
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+/* line 39, /library/scss/_grid.scss */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sixpointfivecol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
   margin-left: 2.762430939%; }
 
-/* line 44, /library/scss/_grid.scss */
+/* line 45, /library/scss/_grid.scss */
 .first {
   margin-left: 0; }
 
-/* line 48, /library/scss/_grid.scss */
+/* line 49, /library/scss/_grid.scss */
 .last {
   float: right; }
 
-/* line 52, /library/scss/_grid.scss */
-.fourcol {
-  max-width: 315px !important; }
+/* line 53, /library/scss/_grid.scss */
+.fourcolsidebar {
+  position: relative;
+  float: left;
+  max-width: 315px !important;
+  margin-left: 2.5%; }
 
 /******************************************************************
 Site Name: 
@@ -587,7 +594,45 @@ be seen on the Desktop.
 /* line 82, /library/scss/_1030up.scss */
 .divider {
   float: left;
-  display: inline; }
+  display: inline;
+  margin-left: 2.5%; }
+
+/* line 88, /library/scss/_1030up.scss */
+#socialicons {
+  position: absolute;
+  z-index: 2;
+  top: 145px;
+  right: 18%; }
+  /* line 93, /library/scss/_1030up.scss */
+  #socialicons a.social {
+    display: block;
+    float: left;
+    text-indent: -9999em;
+    background: url(../images/social-icons.png) no-repeat;
+    height: 25px;
+    width: 27px;
+    margin-right: 12px; }
+  /* line 102, /library/scss/_1030up.scss */
+  #socialicons a.youtube {
+    background-position: 0px 0px; }
+  /* line 105, /library/scss/_1030up.scss */
+  #socialicons a.vimeo {
+    background-position: -28px 0px; }
+  /* line 108, /library/scss/_1030up.scss */
+  #socialicons a.facebook {
+    width: 26px;
+    background-position: -55px 0px; }
+  /* line 112, /library/scss/_1030up.scss */
+  #socialicons a.instagram {
+    width: 26px;
+    background-position: -81px 0px; }
+  /* line 116, /library/scss/_1030up.scss */
+  #socialicons a.twitter {
+    width: 30px;
+    background-position: -108px; }
+  /* line 120, /library/scss/_1030up.scss */
+  #socialicons a.social:hover {
+    opacity: 0.7; }
 
 /* 
 you can call the larger styles if you want, but there's really no need 

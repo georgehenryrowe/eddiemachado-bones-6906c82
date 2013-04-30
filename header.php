@@ -66,7 +66,13 @@
 							<li><a href="#" class="menuarchive">Archive</a></li>
 						</ul>
 					</div>
-
+					<div id="socialicons">
+						<a href="#" class="social youtube">Perus on Youtube</a>
+						<a href="#" class="social vimeo">Perus on Vimeo</a>
+						<a href="#" class="social facebook">Perus on Facebook</a>
+						<a href="#" class="social instagram">Perus on Instagram</a>
+						<a href="#" class="social twitter">Perus on Twitter</a>
+					</div>
 				</div> <!-- end #inner-header -->
 
 			</header> <!-- end header -->

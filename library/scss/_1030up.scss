@@ -82,4 +82,43 @@ left:26%;
 .divider {
 float:left;
 display:inline;
+margin-left:2.5%;
 }
+
+#socialicons {
+position:absolute;
+z-index: 2;
+top:145px;
+right:18%;
+  a.social {
+  display:block;
+  float:left;
+  text-indent: -9999em;
+  background:url(../images/social-icons.png)no-repeat;
+  height:25px;
+  width:27px;
+  margin-right: 12px;
+  }
+  a.youtube {
+  background-position:0px 0px;
+  }
+  a.vimeo {
+  background-position:-28px 0px;
+  }
+  a.facebook {
+  width:26px;
+  background-position: -55px 0px;
+  }
+  a.instagram {
+  width:26px;
+  background-position:-81px 0px;
+  }
+  a.twitter {
+  width:30px;
+  background-position:-108px;
+  }
+  a.social:hover {
+    opacity:0.7;
+  }
+}
+
