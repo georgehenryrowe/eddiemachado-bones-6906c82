@@ -39,12 +39,15 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+background-color:transparent;
+}
 
 #logo {
 	position: absolute;
 	top: 5%;
 	margin-left: 3%;
+	margin-top:0;
 
 	&:hover {
 	opacity: 0.8;

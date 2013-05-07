@@ -125,8 +125,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+	font-size: 1.5em;
+	line-height: 1em;
 	margin-bottom: 0.375em;
 	text-transform:uppercase;
 	a {
@@ -158,9 +158,15 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+background-color:$black;
+padding-bottom:10px;
+}
 
-	#logo {}
+	#logo {
+		display:block;
+		margin: 20px auto;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -174,17 +180,26 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+.navbackground {
+display:none;
+}
+.divider {
+display:none;
+}
+
+#nav {
 
 	li {
+	float:left;
+	width:50%;
+	display:block;
+	text-align:center;
+	background-color:#f2f2f2;
+	border:2px solid $black;
 
 		a {
-			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			border-bottom: 1px solid #ccc;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -193,7 +208,6 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
 			}
 		}
 
@@ -238,11 +252,53 @@ and more scalable.
 	li.current_page_item,
 	li.current-page-ancestor {
 
-		a {}
+		a {color:$black;}
 
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+// SOCIAL ICONS
+
+#socialicons{
+width: 200px;
+display:block;
+margin:20px 0 20px 2px;
+
+a.social {
+  display:block;
+  float:left;
+  text-indent: -9999em;
+  background:url(../images/social-icons-inverted.png)no-repeat;
+  height:25px;
+  width:27px;
+  margin-right: 10px;
+  margin-top: 10px;
+  }
+  a.youtube {
+  background-position:0px 0px;
+  }
+  a.vimeo {
+  background-position:-28px 0px;
+  }
+  a.facebook {
+  width:26px;
+  background-position: -55px 0px;
+  }
+  a.instagram {
+  width:26px;
+  background-position:-81px 0px;
+  }
+  a.twitter {
+  width:30px;
+  background-position:-108px;
+  margin-right: 0px;
+  }
+  a.social:hover {
+    opacity:0.7;
+  }
+}
+
 
 
 /*********************
@@ -250,6 +306,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
+
 }
 
 		.hentry {

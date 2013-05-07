@@ -60,7 +60,7 @@
 							<li><a href="#" class="menuteam">Team</a></li>
 							<li><a href="#" class="menushop">Shop</a></li>
 							<li><a href="#" class="menuvideos">Videos</a></li>
-							<li><a href="http://localhost/peruscrew2/about/" class="menuabout">About</a></li>
+							<li><a href="#" class="menuabout">About</a></li>
 							<li><a href="#" class="menustockists">Stockists</a></li>
 							<li><a href="#" class="menuart">Art</a></li>
 							<li><a href="#" class="menuarchive">Archive</a></li>
