@@ -57,7 +57,7 @@
 					<div id="nav">
 						<ul>
 							<li><a href="#" class="menublog">Blog</a></li>
-							<li><a href="#" class="menuteam">Team</a></li>
+							<li><a href="./team" class="menuteam">Team</a></li>
 							<li><a href="#" class="menushop">Shop</a></li>
 							<li><a href="#" class="menuvideos">Videos</a></li>
 							<li><a href="#" class="menuabout">About</a></li>

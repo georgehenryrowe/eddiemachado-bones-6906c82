@@ -35,18 +35,23 @@ LAYOUT & GRID STYLES
 	position: relative;
 }
 
+#main {
+	width:95%;
+}
+
 /*********************
 HEADER STYLES
 *********************/
 
 .header {
-background-color:transparent;
+background-color:$black;
+height:135px;
 }
 
 #logo {
 	position: absolute;
-	top: 5%;
-	margin-left: 3%;
+	top: 20px;
+	margin-left: 1%;
 	margin-top:0;
 
 	&:hover {
@@ -57,7 +62,20 @@ background-color:transparent;
 NAVIGATION STYLES
 *********************/
 
+#nav {
+	margin-left:200px;
+	font-size:1em;
+	margin-top:35px;
+	li {
+	width:auto;
+	background-color:transparent;
+	}
+}
 
+#socialicons {
+float:left;
+margin:0 0 0 212px;
+}
 
 /*********************
 SIDEBARS & ASIDES
