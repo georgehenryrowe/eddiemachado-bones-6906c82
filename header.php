@@ -56,14 +56,14 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/nav-background.png" class="navbackground">
 					<div id="nav">
 						<ul>
-							<li><a href="#" class="menublog">Blog</a></li>
+							<li><a href="/" class="menublog">Blog</a></li>
 							<li><a href="./team" class="menuteam">Team</a></li>
 							<li><a href="#" class="menushop">Shop</a></li>
-							<li><a href="#" class="menuvideos">Videos</a></li>
-							<li><a href="#" class="menuabout">About</a></li>
-							<li><a href="#" class="menustockists">Stockists</a></li>
-							<li><a href="#" class="menuart">Art</a></li>
-							<li><a href="#" class="menuarchive">Archive</a></li>
+							<li><a href="./videos" class="menuvideos">Videos</a></li>
+							<li><a href="./about" class="menuabout">About</a></li>
+							<li><a href="./stockists" class="menustockists">Stockists</a></li>
+							<li><a href="./art" class="menuart">Art</a></li>
+							<li><a href="./archive" class="menuarchive">Archive</a></li>
 						</ul>
 					</div>
 					<div id="socialicons">

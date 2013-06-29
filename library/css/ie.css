@@ -546,11 +546,11 @@ be seen on the Desktop.
 ******************************************************************/
 /* line 12, /library/scss/_1030up.scss */
 a {
-  -webkit-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  -transition: 0.2s;
-  transition: 0.2s; }
+  -webkit-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -transition: 0.2s ease-out;
+  transition: 0.2s ease-out; }
 
 /* line 16, /library/scss/_1030up.scss */
 .header {
@@ -695,8 +695,9 @@ a {
 
 /* line 155, /library/scss/_1030up.scss */
 .teamphoto {
-  opacity: 0.7; }
-  /* line 157, /library/scss/_1030up.scss */
+  opacity: 0.7;
+  max-width: 240px; }
+  /* line 158, /library/scss/_1030up.scss */
   .teamphoto:hover {
     opacity: 1; }
 

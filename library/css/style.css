@@ -872,11 +872,11 @@ h2, .h2 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 0.375em;
-  text-transform: uppercase; }
-  /* line 136, /library/scss/_base.scss */
+  text-transform: uppercase;
+  font-weight: bold; }
+  /* line 137, /library/scss/_base.scss */
   h2 a, .h2 a {
-    color: #020202;
-    font-weight: bold; }
+    color: #020202; }
     /* line 139, /library/scss/_base.scss */
     h2 a:hover, .h2 a:hover {
       color: #00cfff; }
@@ -1010,14 +1010,92 @@ and more scalable.
 /***********************
 TEAM PAGE STYLES
 ***********************/
-/* line 310, /library/scss/_base.scss */
-.teamphoto {
+/* line 311, /library/scss/_base.scss */
+.grid {
+  padding: 20px 20px 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+
+/* line 319, /library/scss/_base.scss */
+.grid li {
+  display: inline-block;
+  width: 240px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative; }
+
+/* line 328, /library/scss/_base.scss */
+.grid figure {
+  margin: 0;
+  position: relative; }
+
+/* line 333, /library/scss/_base.scss */
+.grid figure img {
+  max-width: 100%;
   display: block;
-  float: left;
+  position: relative; }
+
+/* line 339, /library/scss/_base.scss */
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2c3f52;
+  color: #ed4e6e; }
+
+/* line 348, /library/scss/_base.scss */
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff; }
+
+/* line 354, /library/scss/_base.scss */
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff; }
+
+/* Individual Caption Styles */
+/* Caption Style 1 */
+/* line 366, /library/scss/_base.scss */
+.cs-style-1 figcaption {
+  height: 100%;
   width: 100%;
-  max-width: 250px;
-  margin-bottom: 10px;
-  padding-right: 3%; }
+  opacity: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s; }
+
+/* line 380, /library/scss/_base.scss */
+.no-touch .cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translate(15px, 15px);
+  -moz-transform: translate(15px, 15px);
+  -ms-transform: translate(15px, 15px);
+  transform: translate(15px, 15px); }
+
+/* line 388, /library/scss/_base.scss */
+.cs-style-1 figcaption h3 {
+  margin-top: 70px; }
+
+/* line 392, /library/scss/_base.scss */
+.cs-style-1 figcaption span {
+  display: block; }
+
+/* line 396, /library/scss/_base.scss */
+.cs-style-1 figcaption a {
+  margin-top: 30px; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1033,12 +1111,12 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 356, /library/scss/_base.scss */
+/* line 435, /library/scss/_base.scss */
 .byline {
   color: #999; }
 
 /* entry content */
-/* line 363, /library/scss/_base.scss */
+/* line 442, /library/scss/_base.scss */
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -1046,40 +1124,40 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 398, /library/scss/_base.scss */
+  /* line 477, /library/scss/_base.scss */
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-  /* line 405, /library/scss/_base.scss */
+  /* line 484, /library/scss/_base.scss */
   .entry-content img {
     margin: 0 0 1.5em 0;
     max-width: 100%;
     height: auto; }
-  /* line 421, /library/scss/_base.scss */
+  /* line 500, /library/scss/_base.scss */
   .entry-content video, .entry-content object {
     max-width: 100%;
     height: auto; }
-  /* line 426, /library/scss/_base.scss */
+  /* line 505, /library/scss/_base.scss */
   .entry-content pre {
     background: #eee;
     border: 1px solid #cecece;
     padding: 10px; }
 
 /* end .entry-content */
-/* line 434, /library/scss/_base.scss */
+/* line 513, /library/scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-  /* line 440, /library/scss/_base.scss */
+  /* line 519, /library/scss/_base.scss */
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  /* line 446, /library/scss/_base.scss */
+  /* line 525, /library/scss/_base.scss */
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -1092,12 +1170,12 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 484, /library/scss/_base.scss */
+/* line 563, /library/scss/_base.scss */
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em; }
 
-/* line 487, /library/scss/_base.scss */
+/* line 566, /library/scss/_base.scss */
 .bones_page_navi {
   /* current page link */
   /* end .bones_page_navi .bpn-current */
@@ -1107,37 +1185,37 @@ PAGE NAVI STYLES
   /* next page link */
   /* first page link */
   /* last page link */ }
-  /* line 489, /library/scss/_base.scss */
+  /* line 568, /library/scss/_base.scss */
   .bones_page_navi li {
     float: left;
     margin-left: 10px; }
-    /* line 493, /library/scss/_base.scss */
+    /* line 572, /library/scss/_base.scss */
     .bones_page_navi li a {
       padding: 3px 6px;
       display: block;
       text-decoration: none;
       position: relative; }
-      /* line 500, /library/scss/_base.scss */
+      /* line 579, /library/scss/_base.scss */
       .bones_page_navi li a:hover, .bones_page_navi li a:focus {
         color: #f01d4f;
         text-decoration: underline; }
-  /* line 509, /library/scss/_base.scss */
+  /* line 588, /library/scss/_base.scss */
   .bones_page_navi li.bpn-current {
     padding: 3px 6px;
     border-bottom: 2px solid #f01d4f;
     position: relative; }
-    /* line 514, /library/scss/_base.scss */
+    /* line 593, /library/scss/_base.scss */
     .bones_page_navi li.bpn-current a {
       /* hovering on current page link */ }
-  /* line 525, /library/scss/_base.scss */
+  /* line 604, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link,
   .bones_page_navi li.bpn-next-link {
     font-weight: 700; }
-    /* line 528, /library/scss/_base.scss */
+    /* line 607, /library/scss/_base.scss */
     .bones_page_navi li.bpn-prev-link a,
     .bones_page_navi li.bpn-next-link a {
       padding: 0; }
-  /* line 537, /library/scss/_base.scss */
+  /* line 616, /library/scss/_base.scss */
   .bones_page_navi li.bpn-prev-link a:hover,
   .bones_page_navi li.bpn-next-link a:hover,
   .bones_page_navi li.bpn-first-page-link a:hover,
@@ -1146,10 +1224,10 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 580, /library/scss/_base.scss */
+/* line 659, /library/scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left; }
-/* line 584, /library/scss/_base.scss */
+/* line 663, /library/scss/_base.scss */
 .wp-prev-next .next-link {
   float: right; }
 
@@ -1158,11 +1236,11 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 595, /library/scss/_base.scss */
+/* line 674, /library/scss/_base.scss */
 #comments {
   /* number of comments span */ }
 
-/* line 612, /library/scss/_base.scss */
+/* line 691, /library/scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1172,7 +1250,7 @@ COMMENT STYLES
   /* end .commentlist .comment_content */
   /* comment reply link */
   /* end .commentlist .comment-reply-link */ }
-  /* line 614, /library/scss/_base.scss */
+  /* line 693, /library/scss/_base.scss */
   .commentlist li {
     position: relative;
     clear: both;
@@ -1181,66 +1259,66 @@ COMMENT STYLES
     margin-bottom: 1.5em;
     padding: 0.7335em 10px;
     /* end .commentlist li ul.children */ }
-    /* line 622, /library/scss/_base.scss */
+    /* line 701, /library/scss/_base.scss */
     .commentlist li:last-child {
       margin-bottom: 0; }
-    /* line 626, /library/scss/_base.scss */
+    /* line 705, /library/scss/_base.scss */
     .commentlist li ul.children {
       margin: 0;
       /* variations */
       /* change number for different depth */ }
-  /* line 644, /library/scss/_base.scss */
+  /* line 723, /library/scss/_base.scss */
   .commentlist li[class*=depth-] {
     margin-top: 1.1em; }
-  /* line 648, /library/scss/_base.scss */
+  /* line 727, /library/scss/_base.scss */
   .commentlist li.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-  /* line 653, /library/scss/_base.scss */
+  /* line 732, /library/scss/_base.scss */
   .commentlist li:not(.depth-1) {
     margin-right: -10px;
     margin-left: -10px;
     margin-top: 0;
     padding-bottom: 0; }
-  /* line 667, /library/scss/_base.scss */
+  /* line 746, /library/scss/_base.scss */
   .commentlist .odd {
     background: #eee; }
-  /* line 670, /library/scss/_base.scss */
+  /* line 749, /library/scss/_base.scss */
   .commentlist .even {
     background: #fefefe; }
-  /* line 685, /library/scss/_base.scss */
+  /* line 764, /library/scss/_base.scss */
   .commentlist .vcard {
     margin-left: 50px; }
-    /* line 688, /library/scss/_base.scss */
+    /* line 767, /library/scss/_base.scss */
     .commentlist .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-    /* line 696, /library/scss/_base.scss */
+    /* line 775, /library/scss/_base.scss */
     .commentlist .vcard time {
       float: right; }
-      /* line 699, /library/scss/_base.scss */
+      /* line 778, /library/scss/_base.scss */
       .commentlist .vcard time a {
         color: #999;
         text-decoration: none; }
-        /* line 703, /library/scss/_base.scss */
+        /* line 782, /library/scss/_base.scss */
         .commentlist .vcard time a:hover {
           text-decoration: underline; }
-    /* line 713, /library/scss/_base.scss */
+    /* line 792, /library/scss/_base.scss */
     .commentlist .vcard img.avatar {
       position: absolute;
       left: 10px;
       padding: 2px;
       border: 1px solid #cecece;
       background: #fff; }
-  /* line 738, /library/scss/_base.scss */
+  /* line 817, /library/scss/_base.scss */
   .commentlist .comment_content {
     margin-left: 50px; }
-    /* line 741, /library/scss/_base.scss */
+    /* line 820, /library/scss/_base.scss */
     .commentlist .comment_content p {
       margin: 0.7335em 0 1.5em;
       font-size: 1em;
       line-height: 1.5em; }
-  /* line 750, /library/scss/_base.scss */
+  /* line 829, /library/scss/_base.scss */
   .commentlist .comment-reply-link {
     text-decoration: none;
     float: right;
@@ -1251,7 +1329,7 @@ COMMENT STYLES
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.9em; }
-    /* line 762, /library/scss/_base.scss */
+    /* line 841, /library/scss/_base.scss */
     .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
       opacity: 1; }
 
@@ -1259,23 +1337,23 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 774, /library/scss/_base.scss */
+/* line 853, /library/scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em; }
-  /* line 778, /library/scss/_base.scss */
+  /* line 857, /library/scss/_base.scss */
   .respond-form form {
     margin: 0.75em 0; }
-    /* line 781, /library/scss/_base.scss */
+    /* line 860, /library/scss/_base.scss */
     .respond-form form li {
       list-style-type: none;
       clear: both;
       margin-bottom: 0.7335em; }
-      /* line 787, /library/scss/_base.scss */
+      /* line 866, /library/scss/_base.scss */
       .respond-form form li label,
       .respond-form form li small {
         display: none; }
-    /* line 795, /library/scss/_base.scss */
+    /* line 874, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url],
@@ -1285,13 +1363,13 @@ COMMENT FORM STYLES
       border: 2px solid #cecece;
       line-height: 1.5em;
       /* form validation */ }
-      /* line 801, /library/scss/_base.scss */
+      /* line 880, /library/scss/_base.scss */
       .respond-form form input[type=text]:focus,
       .respond-form form input[type=email]:focus,
       .respond-form form input[type=url]:focus,
       .respond-form form textarea:focus {
         background: #fff; }
-      /* line 806, /library/scss/_base.scss */
+      /* line 885, /library/scss/_base.scss */
       .respond-form form input[type=text]:invalid,
       .respond-form form input[type=email]:invalid,
       .respond-form form input[type=url]:invalid,
@@ -1303,13 +1381,13 @@ COMMENT FORM STYLES
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         box-shadow: none; }
-    /* line 819, /library/scss/_base.scss */
+    /* line 898, /library/scss/_base.scss */
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url] {
       max-width: 400px;
       min-width: 250px; }
-    /* line 824, /library/scss/_base.scss */
+    /* line 903, /library/scss/_base.scss */
     .respond-form form textarea {
       resize: none;
       width: 97.3%;
@@ -1317,33 +1395,33 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 837, /library/scss/_base.scss */
+/* line 916, /library/scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 850, /library/scss/_base.scss */
+/* line 929, /library/scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-/* line 855, /library/scss/_base.scss */
+/* line 934, /library/scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 871, /library/scss/_base.scss */
+/* line 950, /library/scss/_base.scss */
 .widget ul li {
   /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
 *********************/
-/* line 892, /library/scss/_base.scss */
+/* line 971, /library/scss/_base.scss */
 .footer {
   clear: both; }
 
@@ -1686,11 +1764,11 @@ you can add resource intensive styles.
   ******************************************************************/
   /* line 12, /library/scss/_1030up.scss */
   a {
-    -webkit-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    -transition: 0.2s;
-    transition: 0.2s; }
+    -webkit-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -transition: 0.2s ease-out;
+    transition: 0.2s ease-out; }
 
   /* line 16, /library/scss/_1030up.scss */
   .header {
@@ -1835,8 +1913,9 @@ you can add resource intensive styles.
 
   /* line 155, /library/scss/_1030up.scss */
   .teamphoto {
-    opacity: 0.7; }
-    /* line 157, /library/scss/_1030up.scss */
+    opacity: 0.7;
+    max-width: 240px; }
+    /* line 158, /library/scss/_1030up.scss */
     .teamphoto:hover {
       opacity: 1; } }
 /*
